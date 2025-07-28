@@ -128,6 +128,7 @@ pub struct StreamingChoice {
 #[derive(Serialize, Deserialize, Debug, Clone)]
 pub struct Message {
     pub content: Option<String>,
+    pub reasoning: Option<String>,
     pub role: Option<String>,
     pub tool_calls: Option<Vec<ToolCall>>,
 }
@@ -135,6 +136,7 @@ pub struct Message {
 #[derive(Serialize, Deserialize, Debug, Clone)]
 pub struct Delta {
     pub content: Option<String>,
+    pub reasoning: Option<String>,
     pub role: Option<String>,
     pub tool_calls: Option<Vec<ToolCall>>,
 }
